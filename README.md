@@ -4,9 +4,9 @@ Summer Project Challange
 	{
 		start_date : June 2
 		year : 2022
-		total_challanges : 30
-		completed_challanges  : 0
-		currently_on : 1
+		total_challanges : 38
+		completed_challanges  : 1
+		currently_on : Calculator
 	}
 ### - { Status }
 - **Github Streak**
@@ -61,9 +61,8 @@ Summer Project Challange
 - [ ] Giphy Clone
 - [ ] User Activity Tracker
 - [ ] Stock-trading App
-- [ ] Chess Game
+- [x] Chess Game
 - [ ] Music Player
 - [ ] To-Do List App
 - [ ] Random User Generator
 - [ ] Typing Speed Test
-
