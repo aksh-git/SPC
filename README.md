@@ -1,5 +1,5 @@
-# SVPC
-Summer Vacation Project Challange 
+# SPC
+Summer Project Challange 
 ### - { Config }
 	{
 		start_date : June 2
