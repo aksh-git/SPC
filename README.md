@@ -5,8 +5,8 @@ Summer Project Challange
 		start_date : June 2
 		year : 2022
 		total_challanges : 38
-		completed_challanges  : 1
-		currently_on : Calculator
+		completed_challanges  : 2
+		currently_on : Quiz App
 	}
 ### - { Status }
 - **Github Streak**
@@ -28,7 +28,7 @@ Summer Project Challange
  i've have to code every single day.
 
 ### - { Challanges }
-- [ ] Calculater
+- [x] Calculater
 - [ ] QuizApp
 - [ ] Rock Paper Scissors
 - [ ] Note App
