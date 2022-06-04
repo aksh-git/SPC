@@ -28,7 +28,7 @@ Summer Project Challange
  i've have to code every single day.
 
 ### - { Challanges }
-- [x] Calculater
+- [x] [Calculater](https://aksh-git.github.io/SPC/projects/Calculator/)
 - [ ] QuizApp
 - [ ] Rock Paper Scissors
 - [ ] Note App
@@ -61,7 +61,7 @@ Summer Project Challange
 - [ ] Giphy Clone
 - [ ] User Activity Tracker
 - [ ] Stock-trading App
-- [x] Chess Game
+- [x] [Chess Game](https://aksh-git.github.io/chess/)
 - [ ] Music Player
 - [ ] To-Do List App
 - [ ] Random User Generator
