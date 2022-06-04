@@ -1,0 +1,19 @@
+# dependencies
+/projects/quizcafe/node_modules
+
+# testing
+/projects/quizcafe/coverage
+
+# production
+/projects/quizcafe/build
+
+# misc
+/projects/quizcafe/.DS_Store
+/projects/quizcafe/.env.local
+/projects/quizcafe/.env.development.local
+/projects/quizcafe/.env.test.local
+/projects/quizcafe/.env.production.local
+
+/projects/quizcafe/npm-debug.log*
+/projects/quizcafe/yarn-debug.log*
+/projects/quizcafe/yarn-error.log*
