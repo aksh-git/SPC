@@ -1,52 +1,130 @@
 console.log("hello world");
-let eq = [];
-let screen = document.getElementById("screen");
+let eq = "";
+let num = 0;
+let num1 = 0;
+let result = 0;
+let screen = document.getElementById('calscreen');
+let prevop=null;
 
 let nums = ["0","1","2","3","4","5","6","7","8","9","."];
-let opps = {
-    61:"add",
-    173:"sub",
-    88:"multi",
-    56:"multi",
-    191:"divide",
-    53:"percent",
-    61:"equals",
-    67:"clear"
+let opps = ["add","sub","multi","multi","divide","percent","equal","clear"];
+
+displayScreen=()=>{
+    document.getElementById('calscreen').value=eq;
+}
+displayResult=()=>{
+    document.getElementById('result').innerHTML=result;
+}
+clear=()=>{
+    num = "";
+    document.getElementById('calscreen').innerHTML= "0";
+}
+allClear=()=>{
+    prevop=null;
+    result=0;
+    eq="";
+    num=0;
+    displayScreen();
+    displayResult();
 }
 
-handleKeyPress = (charkey,keycode) =>{
-    let keycase = verifyKey(charkey,keycode)
-    //switch(keycase){
-    //    case "num":
-    //        eq.push(parseInt(charkey))
-    //        break;
-    //    default:
-    //        return;
-    //}
-    if(keycase==="num")
-        console.log(document.getElementById("key"+charkey));
-}
-
-verifyKey = (charkey,keycode) =>{
-    if(nums.includes(charkey)){
-        return "num"
+operate=(action,value)=>{
+    if(action==="clear"){
+        allClear()
+    }else if(action==="num"){
+        eq+=value;
+        num = num+value;
+        displayScreen()
+        if(prevop!==null)
+            solve(eq)
     }else{
-        return opps[keycode]
+        console.log("line44");
+        switch(action){
+            case "add":
+                prevop ="add"
+                eq+="+"
+                break;
+            case "sub":
+                eq+="-"
+                prevop ="sub"
+                break;
+            case "multi":
+                prevop ="multi"
+                eq+="*"
+                break;
+            case "div":
+                prevop ="div"
+                eq+="\'/"
+                break;
+        }
     }
 }
 
-function add(a,b){
-    return a+b;
+calculate=(op,num)=>{
+    console.log("line65");
+    switch(op){
+        case "add":
+            add(num);
+            break;
+        case "sub":
+            sub(num)
+            break;
+        case "multi":
+            multiply(num)
+            break;
+        case "div":
+            divide(num)
+            break;
+    }
 }
 
-window.onkeydown = function(e) {
-    var charkey = e.key;
-    var keycode = e.keyCode || e.charCode;
-    if( keycode == 8 || keycode == 46 )
-        //backspace
-        console.log("back");    
-    else
-        handleKeyPress(charkey,keycode)   
-        //console.log(key);
-};
+onButtonClick=(e)=>{
+    let ty = verify(e.value);
+    if(ty.includes("num")){
+        let t = "num";
+        let v = ty.replace("num",'')
+        operate(t,v)
+    }else if(ty.includes("ops")){
+        let t = e.value;
+        let v = 0;
+        operate(t,v);
+    }
+}
+
+solve=(eq)=>{
+    result = eval(eq);
+    displayResult()
+}
+
+add=(num)=>{
+    result = parseInt(result) + parseInt(num);
+    displayResult();
+}
+sub=(num)=>{
+    result = parseInt(result) - parseInt(num);
+    displayResult();
+}
+multiply=(num)=>{
+    result = (parseInt(result)*parseInt(num));
+    displayResult();
+}
+divide=(num)=>{
+    result = (parseInt(result) / parseInt(num));
+    displayResult();
+}
+mod=(num)=>{
+    result = (parseInt(result) % parseInt(num));
+    displayResult();
+}
+
+verify=(value)=>{
+    if(nums.includes(value)){
+        return "num"+value
+    }else if(opps.includes(value)){
+        return "ops"+value;
+    }else{
+        return false
+    }
+}
+
 

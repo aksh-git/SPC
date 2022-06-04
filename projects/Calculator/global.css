@@ -21,18 +21,20 @@ body{
 .inside{
     max-height: 100%;
     max-width: 100%;
-    position: relative;
-    left: 0;
     right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .calc-container{
    background-color: #03830993;  
-   max-width: 100%;
+   max-width: min-content;
    padding: .5em;
    margin: 1rem;
+   width: min-content;
 }
 .screen{
-  padding: .5em .3em .2em 2em;
+  padding: .2em;
   border-radius: .2em .2em .2em .2em;
   background-color: #dadada96;   
   display: flex;
@@ -41,24 +43,15 @@ body{
   align-items: flex-end;
   gap: .2em;
 }
-.screen input{
+.screen #calscreen{
     all: unset;
-    width: 100%;
+    font-size: 2em;
     direction: rtl;
-    caret-color: #5fa20800;
-    font-size: 1.54rem;
-    background-color: #5fa2084b;
-    padding: .3rem .8rem;
-    border-radius: .2em;
 }
-input:hover{
-    cursor: pointer;
+.screen #result{
+    font-size: 1.2em;
 }
-input:focus,
-input:active{
-    box-shadow: inset 0 0 10px #5fa208;
-    outline: none;
-}
+
 .key-pad{
     width: 100%;
     margin-top: 1em;
@@ -95,14 +88,4 @@ input:active{
 }
 .pushable:active .front {
   transform: translateY(-2px);
-}
-@media only screen and (min-width: 600px) {
-    .inside{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .calc-container{
-        width: max-content;
-    }
 }
