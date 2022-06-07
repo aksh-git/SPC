@@ -1,0 +1,50 @@
+.navbar{
+    background-color: #009393;
+    padding: .2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    position: sticky;
+    top: 0;
+}
+.navbar .logo{
+    font-size: 2rem;
+    text-transform: uppercase;
+    pointer-events: none;
+}
+.menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu ul li{
+    display: inline-block;
+    margin: .3rem 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.menu-item{
+    display: inline-block;
+    position: relative;
+}
+.menu-item:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.menu-item:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.signup-btn:hover{
+    border-color: #00e0c6;
+    color: #00e0c6;
+}

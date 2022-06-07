@@ -1,0 +1,24 @@
+/*Globals will be handled here*/
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #016170;
+  color: #ffffff;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.heading{
+  font-family: 'Rozha One', serif;
+}
+.normal{
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.container{
+  padding: 1rem 2rem;
+}
