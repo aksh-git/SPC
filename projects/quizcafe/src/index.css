@@ -19,10 +19,10 @@ code {
   font-family: 'Montserrat Alternates', sans-serif;
 }
 .container{
-  padding: 1rem 2rem;
+  padding: 1rem 1.2rem;
 }
 section{
-  min-height: 90vh;
+  min-height: 50vh;
   width: 100%;
 }
 /*Custom scroll bar*/
@@ -37,4 +37,23 @@ section{
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #ffffff;
+}
+
+/*animations*/
+@keyframes slideDown {
+  from{
+    margin-top: -100vh;
+  }
+  to{
+    margin-top: 0;
+  }
+}
+
+@keyframes slideUp {
+  from{
+    margin-top: 100vh;
+  }
+  to{
+    margin-top: 0;
+  }
 }

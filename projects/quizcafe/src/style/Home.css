@@ -1,9 +1,43 @@
 .section0{
-
+    height: 80vh;
+    max-width: 100%;
+    overflow: hidden;
 }
 .header{
+    margin-top: 20vh;
     text-align: center;
+    display: grid;
 }
 .section0 .header .wel-txt{
-    font-size: 3.7rem;
+    font-size: 5vw;
+    color: #f1f1f1;
+    animation: slideDown 400ms linear;
+}
+.header .decp{
+    padding: 0 18rem;
+    font-size: 1.4rem;
+    color: #fff;
+    animation: slideUp 550ms ease-out;
+}
+.header .buttons{
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+button:active{
+    color: #00e0c6;
+    border-color: #00e0c6;
+    box-shadow: 0 0 10px #00e0c6;
+}
+.suggbtns{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 1rem;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 10vh;
 }

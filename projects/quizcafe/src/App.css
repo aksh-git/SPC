@@ -25,6 +25,7 @@
   color: #ffffff;
 }
 .button-base{
+  all: unset;
   border-radius: 5px;
   padding: .3rem 1rem;
   border: .073rem solid;
