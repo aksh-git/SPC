@@ -9,8 +9,9 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-.App-link {
-  color: #61dafb;
+a {
+  text-decoration: none;
+  color: #00e0c6;
 }
 .BG{
   background-color: #016170;
@@ -36,6 +37,9 @@
 }
 .btn-push:active{
   transform: scale(0.971);
+}
+.not-found{
+  animation: slideUp 300ms ease;
 }
 @keyframes spin {
   from {
