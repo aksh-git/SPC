@@ -13,8 +13,6 @@ import NotFound from './components/NotFound';
 
 function App() {
 
-  const paths = ["/","/explore","/"];
-
   return (
     <Router>
     <div className="App">

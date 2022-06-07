@@ -1,5 +1,6 @@
 import React from 'react'
 import '../style/Home.css'
+import { Link } from "react-router-dom"
 
 function Home() {
   return (
@@ -13,12 +14,10 @@ function Home() {
           <div className='buttons'>
             <button className='button-base btn-push'><span className='normal'>Let's Check</span></button>
           </div>
-          <br/><br/>
           <div className='suggbtns'>
-            <button className='button-base btn-push'><span className='normal'>Explore</span></button>
-            <button className='button-base btn-push'><span className='normal'>About</span></button>
-            <button className='button-base btn-push'><span className='normal'>Connect</span></button>
-
+            <Link to="/explore"><button className='button-base btn-push'><span className='normal'>Explore</span></button></Link>
+            <Link to="/about"><button className='button-base btn-push'><span className='normal'>About</span></button></Link>
+            <Link to="/connect"><button className='button-base btn-push'><span className='normal'>Connect</span></button></Link>
           </div>
         </div>
       </section>
