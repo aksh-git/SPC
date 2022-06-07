@@ -5,10 +5,8 @@ function NotFound() {
     <div className='container not-found'>
         <center>
             <div style={{marginTop:'10%'}}>
-                <h1 className='normal'>Error 404</h1>
-                <h3 className='normal'>Page not found</h3>
-                <br/>
-                <br/>
+                <h1 style={{fontSize:'7em'}} className='normal'>404</h1>
+                <h3 style={{marginTop:'-4em',letterSpacing:'2px',fontSize:'1.3rem'}} className='normal'>Page not found.</h3>
                 <br/>
                 <a href='/'>
                     <button className='button-base btn-push'>

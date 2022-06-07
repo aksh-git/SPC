@@ -39,7 +39,7 @@ a {
   transform: scale(0.971);
 }
 .not-found{
-  animation: slideUp 300ms ease;
+  animation: slideDown 300ms ease;
 }
 @keyframes spin {
   from {
