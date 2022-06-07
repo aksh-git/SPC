@@ -3,7 +3,7 @@
     padding: .2rem 1rem;
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     position: sticky;
     top: 0;
 }
@@ -12,6 +12,10 @@
     text-transform: uppercase;
     pointer-events: none;
 }
+.menu{
+    margin: 0;
+    padding: 0;
+}
 .menu ul{
     list-style-type: none;
     margin: 0;
@@ -19,13 +23,13 @@
 }
 .menu ul li{
     display: inline-block;
-    margin: .3rem 1rem;
     font-size: 1.2rem;
     cursor: pointer;
 }
 .menu-item{
     display: inline-block;
     position: relative;
+    margin: .3rem 1rem;
 }
 .menu-item:after {
   content: '';

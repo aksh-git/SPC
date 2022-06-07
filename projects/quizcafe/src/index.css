@@ -18,7 +18,23 @@ code {
 .normal{
   font-family: 'Montserrat Alternates', sans-serif;
 }
-
 .container{
   padding: 1rem 2rem;
+}
+section{
+  min-height: 90vh;
+  width: 100%;
+}
+/*Custom scroll bar*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #009393;
+}
+::-webkit-scrollbar-thumb {
+  background: #00e0c6;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
 }
