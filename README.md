@@ -39,7 +39,7 @@ Summer Project Challange
 - [ ] Password Generator
 - [ ] Tic Tac Toe Game
 - [ ] Link Shortener Website
-- [x] [Portfolio Website](https://aksh-web.netlify.app/)
+- [ ] Portfolio Website
 - [ ] Drawing App
 - [ ] Food Order Website
 - [ ] Meme Generator
