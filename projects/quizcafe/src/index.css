@@ -5,6 +5,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #016170;
   color: #ffffff;
+  font-family: 'Montserrat Alternates', sans-serif;
 }
 
 code {
