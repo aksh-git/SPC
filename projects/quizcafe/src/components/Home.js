@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"
 function Home() {
   return (
     <div className='container'>
-      <ul className="circles">
+      <ul className="squares">
         <li></li>
         <li></li>
         <li></li>
