@@ -12,10 +12,10 @@ function Navbar() {
         <div className='menu'>
           <ul className='list normal'>
             <Link to="/"><li className='menu-item'>Home</li></Link>
-            <Link to="TakeAQuiz"><li className='menu-item'>Take A Quiz</li></Link>
+            <Link to="/quiz"><li className='menu-item'>Take A Quiz</li></Link>
             <Link to="/Leaderboard"><li className='menu-item'>Leaderboard</li></Link>
             <Link to="/login"><li className='menu-item'>Login</li></Link>
-            <Link to="/sign-up"><li className='signup-btn btn-push button-base'>Signup</li></Link>
+            <Link to="/sign-up"><li className='signup-btn btn-push button-base'>Sign-up</li></Link>
           </ul>
         </div>
       </div>

@@ -1,9 +1,15 @@
 import React from 'react'
+import '../style/Explore.css'
 
 function Explore() {
   return (
     <div className="container">
-      <center><h1 className="heading">QUIZ|CAFE</h1></center>
+      <div className="header-badge">
+        <span className='txt heading'>Explore</span>
+      </div> 
+      <div className="header">
+        
+      </div>
     </div>
   )
 }

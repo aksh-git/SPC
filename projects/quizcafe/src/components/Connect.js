@@ -2,7 +2,11 @@ import React from 'react'
 
 function Connect() {
   return (
-    <div className="container">Connect</div>
+    <div className="container">
+      <div className="header-badge">
+        <span className='txt heading'>Connect</span>
+      </div> 
+    </div>
   )
 }
 
