@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../style/Csection.css'
 import { MdOutlineReadMore } from 'react-icons/md'
 import { Carousel } from 'react-responsive-carousel'
@@ -9,6 +9,7 @@ import { useNavigate } from 'react-router-dom'
 
 function CustomSection(props) {
   const { csHeadTitle, viewMoreLink } = props.data;
+
   const navigate = useNavigate();
 
 
@@ -21,6 +22,9 @@ function CustomSection(props) {
     publishedBy:"quizcafe"
   }
 
+  useEffect(() => {
+    console.log(csHeadTitle);
+  }, [props.data])
   
 
   return (

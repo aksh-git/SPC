@@ -1,15 +1,12 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import '../style/Quiz.css'
 import { FiSearch } from 'react-icons/fi'
 import CustomSection from './CustomSection'
 
 function Quiz() {
-
-  let csdata ={
-    csHeadTitle:"Category will go here",
-    viewMoreLink:"/category?tech"
-  }
-
+  //data by category
+  const [csdata, setcsdata] = useState([])
+  
   return (
     <div className="container">
       <div className="q-menu">
@@ -22,9 +19,14 @@ function Quiz() {
         </div>
       </div>
       <div className='content'>
-        <CustomSection data={csdata} />
-        <CustomSection data={csdata} />
-        <CustomSection data={csdata} />
+        {csdata.length === 0 && <div style={{padding:'1rem',fontSize:'2.3rem'}}>
+          <center>Error : No data found</center></div>} 
+        {csdata.length > 0 && csdata.map((cdata)=>{
+            console.log(cdata);
+            return(
+              <CustomSection data={cdata} />
+            )
+        })}
       </div>
     </div>
   )
