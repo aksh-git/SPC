@@ -1,0 +1,61 @@
+.q-card{
+    height: 210px;
+    width: 180px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 8px;
+    cursor: pointer;
+    margin: .4rem;
+    transition: transform 200ms;
+    overflow: hidden;
+}
+.qc-main{
+    position: relative;
+    max-height: 180px;
+}
+.qc-main .qc-title{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background: rgba(53, 53, 53, 0.281);
+    border-radius: 0 0 10px 10px;
+    backdrop-filter: blur(10px);
+}
+.qc-title p{
+    margin: 0;
+    padding: .4rem .6rem;
+    font-weight: 600;
+    overflow: hidden;
+}
+.qc-image{
+    border-radius: 10px;
+    width: 100%;
+}
+.qc-footer{
+    position: relative;
+    display: flex;
+    font-size: .7rem;
+    margin: 0 .3rem;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.qc-footer .pub-date{
+    
+}
+
+.q-card:hover{
+    transform: translateY(-10%);
+    box-shadow: 0 0 10px #00e0c685;
+}
+.q-card:active{
+    animation: cpop 100ms linear;
+}
+
+@keyframes cpop {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(10);    
+    }
+}
