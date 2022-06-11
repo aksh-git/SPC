@@ -26,12 +26,17 @@
 }
 .search-bar input{
     all: unset;
-    background: rgba(31, 25, 25, 0.2);
+    background: rgba(255, 255, 255, 0.1);
     padding: .4rem .4rem .4rem 2rem;
     font-size: 18px;
     border-radius: 15px 0 0 15px;
 }
+.search-bar input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+}
+  
 .search-bar input:focus{
     box-shadow: 0 0 10px #00e0c685;
-    background: rgba(31, 25, 25, .4);
+    background: rgba(255, 255, 255, 0.3);
 }

@@ -5,18 +5,7 @@ import { Link } from "react-router-dom"
 function Home() {
   return (
     <div className='container'>
-      <ul className="squares">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
+      
       <section className='section0'>
         <div className='header'>
           <span className='heading wel-txt'>WELCOME TO QUIZ|CAFE</span>

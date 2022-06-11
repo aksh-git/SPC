@@ -17,6 +17,18 @@ function App() {
   return (
     <Router>
     <div className="App">
+    <ul className="squares">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
       <Navbar/>
       <Routes>
         <Route exact path='/' element={<Home/>} /> 

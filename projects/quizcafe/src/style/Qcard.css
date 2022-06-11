@@ -17,9 +17,9 @@
     position: absolute;
     width: 100%;
     bottom: 0;
-    background: rgba(53, 53, 53, 0.281);
+    background: rgba(70, 68, 68, 0.581);
     border-radius: 0 0 10px 10px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(2px);
 }
 .qc-title p{
     margin: 0;

@@ -4,6 +4,12 @@ import { FiSearch } from 'react-icons/fi'
 import CustomSection from './CustomSection'
 
 function Quiz() {
+
+  let csdata ={
+    csHeadTitle:"Category will go here",
+    viewMoreLink:"/category?tech"
+  }
+
   return (
     <div className="container">
       <div className="q-menu">
@@ -16,7 +22,9 @@ function Quiz() {
         </div>
       </div>
       <div className='content'>
-        <CustomSection />
+        <CustomSection data={csdata} />
+        <CustomSection data={csdata} />
+        <CustomSection data={csdata} />
       </div>
     </div>
   )
