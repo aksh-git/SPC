@@ -1,4 +1,4 @@
-.container{
+.q-container{
     padding: 3rem 2rem;
 }
 .playarea{
@@ -8,7 +8,7 @@
     right: 0;
     text-align: center;
     width: 70%;
-    display: flex;5
+    display: flex;
     border-radius: 15px;
     overflow: hidden;
 }
