@@ -1,0 +1,24 @@
+.container{
+    padding: 3rem 2rem;
+}
+.playarea{
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: 70%;
+    display: flex;5
+    border-radius: 15px;
+    overflow: hidden;
+}
+.pa-1{  
+    width: 35%;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+}
+.pa-2{
+    background-color: whitesmoke;
+    width: 65%;
+    padding: 10%;
+}

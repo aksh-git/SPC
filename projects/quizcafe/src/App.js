@@ -11,6 +11,7 @@ import Connect from './components/Connect';
 import About from './components/About';
 import NotFound from './components/NotFound';
 import Quiz from './components/Quiz';
+import QuizPlay from './components/QuizPlay';
 
 function App() {
 
@@ -36,6 +37,7 @@ function App() {
         <Route exact path='/about' element={<About/>} />
         <Route exact path='/connect' element={<Connect/>} />
         <Route exact path='/quiz' element={<Quiz/>} />
+        <Route exact path='/quizplay/:id' element={<QuizPlay />} />
         <Route path="*" element={<NotFound/>} />
       </Routes>  
     </div> 
