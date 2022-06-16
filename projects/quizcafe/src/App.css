@@ -162,3 +162,9 @@ a {
     transform: rotate(360deg);
   }
 }
+.error:hover{
+  fill: #b1310a;
+}
+.warn:hover{
+  fill: rgb(219, 200, 26);
+}

@@ -6,19 +6,32 @@
     margin: auto;
     left: 0;
     right: 0;
-    text-align: center;
     width: 70%;
     display: flex;
     border-radius: 15px;
     overflow: hidden;
 }
-.pa-1{  
+.playarea .pa-1{  
     width: 35%;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 22px;
 }
-.pa-2{
-    background-color: whitesmoke;
+.playarea .pa-2{
+    background-color: rgba(245, 245, 245, 0.5);
     width: 65%;
-    padding: 10%;
+    padding: 22px;
+}
+.pa-1 .h-topic{
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.pa-1 .report{
+    font-size: 28px;
+    float: right;
+    display: flex;
+    gap: 5px;
+}
+.report .item{
+    cursor: pointer;
 }
