@@ -58,3 +58,32 @@ section{
     margin-top: 0;
   }
 }
+
+@keyframes pop {
+  from{
+    transform: scale(1);
+  }
+  to{
+    transform: scale(1.5);
+  }
+}
+
+.badge{
+  background-color: rgba(245, 240, 240, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.badge div{
+  padding: 12px 0.170rem;
+  margin: 0 3px 0 0;
+  background-color: #016170;
+}
+.badge span{
+  padding: 3px 5px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #ffffff;
+}

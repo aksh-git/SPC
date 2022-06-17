@@ -13,25 +13,118 @@
 }
 .playarea .pa-1{  
     width: 35%;
-    background: rgba(255, 255, 255, 0.2);
-    padding: 22px;
+    background-color: #1e879773;
+    padding: 18px 22px;
+    position: relative;
 }
 .playarea .pa-2{
-    background-color: rgba(245, 245, 245, 0.5);
+    background: rgba(255, 255, 255, 0.2);
     width: 65%;
-    padding: 22px;
+    padding: 18px 22px;
+    color: rgb(255, 255, 255);
+}
+.pa-1 .head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pa-1 .head .timer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+    border-radius: 7px;
+    background-color: rgba(245, 245, 245, 0.2);
+    width: 5.5em;
+}
+.timer .watch-txt{
+    font-size: 18px;
+    padding: 0 4px 0 0;
 }
 .pa-1 .h-topic{
     font-size: 1.6rem;
     font-weight: 600;
+    margin-top: 1.3rem;
     text-transform: capitalize;
 }
 .pa-1 .report{
     font-size: 28px;
-    float: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 18px 22px;
     display: flex;
     gap: 5px;
 }
+.icon{
+    font-size: 22px;
+}
 .report .item{
     cursor: pointer;
+}
+.pa-2 .head{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.pa-2 .head progress{
+    all: unset;
+    background-color: rgba(245, 240, 240, 0.3);
+    border-radius: 4px;
+    height: 0.5rem;
+    width: 250px;
+}
+.pa-2 .head progress::-moz-progress-bar {
+    background: #016170;
+    border-radius: 4px;
+}
+.pa-2 .head progress::-webkit-progress-value { 
+    background: #016170; 
+    border-radius: 4px;
+}
+.pa-2 .head .status{
+    width: min-content;
+    display: block;
+    text-align: end;
+}
+.status span{
+    font-size: 14px;    
+}
+.q-body{
+    margin-top: 1rem;
+}
+.q-body .question{
+    font-size: 20px;
+}
+.q-body .options{
+    list-style-type: none;
+    padding: 0.5rem  0;
+    margin: 0;
+}
+.options .option{
+    margin: .8rem 0;
+    padding: 0.3rem .8rem;
+    background-color: rgba(245, 240, 240, 0.3);
+    border-radius: 4px;
+    min-width: 45%;
+    max-width: max-content;
+}
+.option:hover{
+    cursor: pointer;
+    box-shadow: 0 0 3px #016170;
+    background-color: rgba(245, 245, 245, 0);
+}
+.o-selected{
+    box-shadow: 0 0 3px #016170;
+    background-color: rgba(245, 245, 245, 0) !important;
+}
+.pa-2 .q-btn{
+    float: right;
+}
+.q-btn button{
+    font-size: 18px;
+    padding: 8px 15px;
+    border-radius: 22px;
+    background-color: #016170;
+    border: none;
 }
