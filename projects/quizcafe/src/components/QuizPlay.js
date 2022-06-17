@@ -101,7 +101,7 @@ function QuizPlay() {
           </div>
         </div>
         <div className='q-body'>
-          <span className='question'>{qques.ques}</span>
+          <span className='question'><span style={{fontSize:'1.8rem'}} className='heading'>Q</span> : {qques.ques}</span>
           <ul className='options'>
             <li className='option'>{qques.op1}</li>
             <li className='option'>{qques.op2}</li>
