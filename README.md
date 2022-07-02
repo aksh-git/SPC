@@ -5,7 +5,7 @@ Summer Project Challange
 		start_date : June 2
 		year : 2022
 		total_challanges : 38
-		completed_challanges  : 2
+		completed_challanges  : 3
 		currently_on : Quiz App
 	}
 	
@@ -40,7 +40,7 @@ Summer Project Challange
 - [ ] Password Generator
 - [ ] Tic Tac Toe Game
 - [ ] Link Shortener Website
-- [ ] Portfolio Website
+- [x] [Portfolio Website](https://akash-web.netlify.app/)
 - [ ] Drawing App
 - [ ] Food Order Website
 - [ ] Meme Generator
