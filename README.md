@@ -31,7 +31,7 @@ Summer Project Challange
 ### - { Challanges }
 - [x] [Calculater](https://aksh-git.github.io/SPC/projects/Calculator/)
 - [ ] QuizApp
-- [ ] Rock Paper Scissors
+- [x] [Rock Paper Scissors](https://aksh-git.github.io/SPC/projects/rock_paper_scissors/)
 - [ ] Note App
 - [ ] QR Code Reader
 - [ ] Weather App
