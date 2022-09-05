@@ -4,14 +4,14 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import Home from './components/Home';
+import Home from './pages/Home';
 import Navbar from './components/Navbar';
-import Explore from './components/Explore';
-import Connect from './components/Connect';
-import About from './components/About';
-import NotFound from './components/NotFound';
-import Quiz from './components/Quiz';
-import QuizPlay from './components/QuizPlay';
+import Explore from './pages/Explore';
+import Connect from './pages/Connect';
+import About from './pages/About';
+import NotFound from './pages/NotFound';
+import Quiz from './pages/Quiz';
+import QuizPlay from './pages/QuizPlay';
 
 function App() {
 

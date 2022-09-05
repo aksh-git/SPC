@@ -68,14 +68,18 @@
     align-items: flex-start;
 }
 .pa-2 .head progress{
-    all: unset;
     background-color: rgba(245, 240, 240, 0.3);
     border-radius: 4px;
     height: 0.5rem;
     width: 250px;
+    border: none;
 }
 .pa-2 .head progress::-moz-progress-bar {
     background: #016170;
+    border-radius: 4px;
+}
+.pa-2 .head progress::-webkit-progress-bar { 
+    background-color: rgba(245, 240, 240, 0.3);
     border-radius: 4px;
 }
 .pa-2 .head progress::-webkit-progress-value { 

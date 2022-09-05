@@ -1,21 +1,24 @@
 .custon-section{
+    width: 90vw;
     margin: 2rem 0;
     background: rgba(255, 255, 255, 0);
-    padding: .5rem 0 .5rem 1rem;
+    display: flex;
+    justify-content: center;
 }
 .cs-header{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    padding: 0 1rem;
 }
 .cs-head-txt{
-    font-size: 1.2rem;
+    font-size: 1.567rem;
 }
 .cs-headbtn{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 1rem;
     gap: 2px;
     cursor: pointer;
 }
@@ -23,6 +26,11 @@
     font-size: 1.7rem;
 } 
 .cs-content{
+    width: 100%;
     display: flex;
-    padding: 1rem .4rem;
+    justify-content: center;
+}
+.cs-content .cs-data{
+    padding: 0 0.4rem;
+    width: 100%;
 }

@@ -1,5 +1,6 @@
 # dependencies
 /projects/quizcafe/node_modules
+/projects/quizcafe/backend/
 
 # testing
 /projects/quizcafe/coverage
