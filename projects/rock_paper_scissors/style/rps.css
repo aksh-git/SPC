@@ -110,6 +110,12 @@
     justify-content: center;
     align-items: center;
 }
+.computer-area .card{
+    flex-direction: column-reverse;
+}
+.computer-area svg{
+    transform: rotate(180deg);
+}
 .card svg{
     font-size: 45px;
 }

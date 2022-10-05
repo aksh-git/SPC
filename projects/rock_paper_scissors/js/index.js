@@ -1,5 +1,5 @@
 class Bot {
-    
+
     options = ['rock','paper','scissors']
     playCounter = 0
     botwins = 0
@@ -123,7 +123,28 @@ function checkWin(user, bot){
     }
 }
 function userChoosed(useroption){
+    let bcPaper = document.getElementById('cpaper')
+    let bcRock = document.getElementById('crock')
+    let bcScissors = document.getElementById('cscissors')
+    
+    bcPaper.classList.contains('hidden')?'':bcPaper.classList.add('hidden')
+    bcRock.classList.contains('hidden')?'':bcRock.classList.add('hidden')
+    bcScissors.classList.contains('hidden')?'':bcScissors.classList.add('hidden')
+
     let botop = bot.choose()
+    switch (botop) {
+        case 'rock':
+            bcRock.classList.remove('hidden')
+            break;
+        case 'paper':
+            bcPaper.classList.remove('hidden')
+            break;
+        case 'scissors':
+            bcScissors.classList.remove('hidden')
+            break;
+        default:
+            break;
+    }
     let res = checkWin(useroption,botop)
     if(res===1){
         bot.updateWin('user')
