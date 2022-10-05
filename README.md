@@ -34,7 +34,7 @@ Summer Project Challange
 - [x] [Rock Paper Scissors](https://aksh-git.github.io/SPC/projects/rock_paper_scissors/)
 - [ ] Note App
 - [ ] QR Code Reader
-- [ ] Weather App
+- [x] [Weather App](https://github.com/aksh-git/weather-app)
 - [ ] E-commerce Website
 - [ ] Landing Page
 - [ ] Password Generator
